@@ -11,24 +11,42 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black ;
             padding: 10px;
         }
+        caption{
+            font-size:1.5em ;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color:lightgrey ;
         }
     </style>
 </head>
 <body>
     <h1>Uso das tabelas grandes </h1>
     <table>
+        <caption>Populaçao das unidades federativas </caption>
         <thead>
            <tr>
-            <th>Estado</th>
-            <th>Poupulaçao </th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">Poupulaçao </th>
            </tr>
         </thead>
         <tbody>
@@ -46,9 +64,10 @@
              </tr>
         </tbody>
         <tfoot>
-             <th>total de habitantes</th>
+             <th scope="row">total de habitantes</th>
              <td>0000</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere exercitationem aliquid ab doloremque? Repellat consectetur, porro sit nihil ut fuga nisi nobis ea. Quos harum incidunt repudiandae magnam facere.</p> 
 </body>
 </html>
